@@ -1,6 +1,12 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+[2020-05-20] Version 7.1.2
+--------------------------
+**Library - Docs**
+- [PR #850](https://github.com/sendgrid/sendgrid-nodejs/pull/850): Add sandbox setting to kitchen-sink documentation. Thanks to [@notdmart](https://github.com/notdmart)!
+
+
 [2020-05-13] Version 7.1.1
 --------------------------
 **Library - Fix**
