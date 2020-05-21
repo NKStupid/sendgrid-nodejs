@@ -2,21 +2,21 @@ const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 
-sgMail.send({
-  to: 'joseph.siyi@gmail.com',
-  from: 'sender@example.org',
-  subject: 'Hello manual content',
-  content: [
-    {
-      type: 'text/html',
-      value: '<p>Hello HTML world!</p>',
-    },
-    {
-      type: 'text/plain',
-      value: 'Hello plain world!',
-    },
-  ],
-});
+// sgMail.send({
+//   to: 'joseph.siyi@gmail.com',
+//   from: 'sender@example.org',
+//   subject: 'Hello manual content',
+//   content: [
+//     {
+//       type: 'text/html',
+//       value: '<p>Hello HTML world!</p>',
+//     },
+//     {
+//       type: 'text/plain',
+//       value: 'Hello plain world!',
+//     },
+//   ],
+// });
 
 // sgMail.send({
 //   to: 'joseph.siyi@gmail.com',
@@ -36,15 +36,15 @@ sgMail.send({
 //   sendAt: 1500077141,
 // });
 
-// sgMail.send({
-//   to: 'joseph.siyi@gmail.com',
-//   from: 'sender@example.org',
-//   subject: 'Hello email with categories',
-//   html: '<p>Some email content</p>',
-//   categories: [
-//     'transactional', 'customer', 'weekly',
-//   ],
-// });
+sgMail.send({
+  to: 'joseph.siyi@gmail.com',
+  from: 'sender@example.org',
+  subject: 'Hello email with categories',
+  html: '<p>Some email content</p>',
+  categories: [
+    'transactional', 'customer', 'weekly',
+  ],
+});
 
 // sgMail.send({
 //   to: 'joseph.siyi@gmail.com',
