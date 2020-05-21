@@ -18,41 +18,17 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 //   ],
 // });
 
-// sgMail.send({
-//   to: 'joseph.siyi@gmail.com',
-//   from: 'sender@example.org',
-//   subject: 'Hello custom header',
-//   html: '<p>Some email content</p>',
-//   headers: {
-//     'X-CustomHeader': 'Custom header value',
-//   },
-// });
-
-// sgMail.send({
-//   to: 'joseph.siyi@gmail.com',
-//   from: 'sender@example.org',
-//   subject: 'Hello delayed email',
-//   html: '<p>Some email content</p>',
-//   sendAt: 1500077141,
-// });
-
 sgMail.send({
   to: 'joseph.siyi@gmail.com',
   from: 'sender@example.org',
-  subject: 'Hello email with categories',
+  subject: 'Hello custom header',
   html: '<p>Some email content</p>',
-  categories: [
-    'transactional', 'customer', 'weekly',
-  ],
+  headers: {
+    'X-CustomHeader': 'Custom header value',
+  },
 });
 
-// sgMail.send({
-//   to: 'joseph.siyi@gmail.com',
-//   from: 'sender@example.org',
-//   subject: 'Hello email with categories',
-//   html: '<p>Some email content</p>',
-//   category: 'transactional',
-// });
+
 
 // sgMail.send({
 //   to: 'joseph.siyi@gmail.com',
